@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomotion Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="halamanutama.css">
+</head>
+<body>
+    <!-- side bar -->
+    <div class="sidebar">
+        <div class="logo1"><img src="/image/389a5964b4945c2298602ae4b4f46142.png" style="color: #f37523; font-size: 10px; width: 200px; height: 22px;"/></div>
+        <ul>
+            <li><a href="../halamanutama/halamanutama.html"><button class="button-dashboard"><i class="bi bi-house-door-fill" style="margin-right: 10px;"></i>Halaman Utama</button></a></li>
+            <li><a href="../daftarkebun/daftarkebun.html"><button class="button-dashboard"><i class="bi bi-tree" style="margin-right: 10px;"></i>Daftar Kebun</button></a></li>
+            <li><a href="../statistikkebun/statistikkebun.html"><button class="button-dashboard"><i class="bi bi-graph-up" style="margin-right: 10px;"></i>Statistik Kebun</button></a></li>
+            <li><button class="button-dashboard"><i class="bi bi-box-fill"style="margin-right: 10px;"></i>Stok Kebun</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-calendar3"style="margin-right: 10px;"></i>Penjadwalan</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-flower3" style="margin-right: 10px;"></i>Informasi Budidaya</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-people-fill"style="margin-right: 10px;"></i>Kelompok Tani</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-person-fill-gear"style="margin-right: 10px;"></i>Pengaturan Akun</button></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-header">
+            
+            <div class="header-welcome">
+                <h1>Halaman Utama</h1>
+                <p>Selamat Datang Kenny Cornelies</p>
+            </div>
+            <div class="header-date row">
+                <p class="col-11 date">12 Januari 2024</p><br>
+                <div class="notification-icon col-1">
+                    <i class="notifcation bi-bell-fill" style="color: #9DB74C; font-size: 20px; text-align: left;margin-right: 30px; padding-right: 20px;"></i><span class="notification-badge"></span>
+                </div>
+                <p class="col-11">10:30:32 WIB, Jawa Barat</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <div class="dropdown">
+                <button class="button-dropdown btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kebun Lembang
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item active" href="#">Kebun Lembang</a></li>
+                  <li><a class="dropdown-item" href="#">Kebun Indramayu</a></li>
+                  <li><a class="dropdown-item" href="#">Kebun Kalimantan</a></li>
+                  <li><a class="dropdown-item" href="#">Kebun Malang</a></li>
+                </ul>
+              </div>
+            
+                <button class="button1">Informasi tambahan</button>
+                <button class="button1">Kegiatan Karyawan</button>
+            </div>
+            <div class="stats">
+                <div class="stat-box row">
+                    <div class="col-md-4">
+                        <img src="/image/kebun.png" style="width: 60px; height: 60px;"/>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Kebun</h3>
+                        <h4>3 Kebun</h4>
+                        <p>3 Kebun telah terdaftar</p>
+                    </div>
+                </div>
+                <div class="stat-box row">
+                    <div class="col-md-4">
+                        <img src="/image/sensor.png" style="width: 60px; height: 60px;"/>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Sensor Kebun</h3>
+                        <h4>6 Sensor</h4>
+                        <p>4 dari 8 sensor aktif</p>
+                    </div>
+                </div>
+                <div class="stat-box row">
+                    <div class="col-md-4">
+                        <img src="/image/aktuator.png" style="width: 60px; height: 60px;"/>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Aktuator</h3>
+                        <h4>8 Aktuator</h4>
+                        <p>4 dari 8 aktuator aktif</p>
+                    </div>
+                </div>
+                <div class="stat-box row">
+                    <div class="col-md-4">
+                        <img src="/image/money.png" style="width: 60px; height: 60px;"/>
+                    </div>
+                    <div class="col-md-8">
+    
+                        <h3>Rp. 3.000.000</h3>
+                        <h4>Pengeluaran</h4>
+                        <p>Pengeluaran bulan ini</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- col 1 Kondisi Kebun-->
+                <div class="conditions col-md-6">
+                    <div class="condition-box">
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                                <h3>Kondisi Kebun</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <button class="button-dropdown1 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Greenhouse Melon
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-white">
+                                      <li><a class="dropdown-item active" href="#">Greehouse Melon</a></li>
+                                      <li><a class="dropdown-item" href="#">Kebun Cabai</a></li>
+                                      <li><a class="dropdown-item" href="#">Kebun Paprika</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                            <div class="dropdown">
+                            <button class="button-dropdown2 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Semua Sensor
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-white">
+                              <li><a class="dropdown-item active" href="#">Sensor Utara</a></li>
+                              <li><a class="dropdown-item" href="#">Sensor Tanah</a></li>
+                              <li><a class="dropdown-item" href="#">Semua Sensor</a></li>
+                              
+                            </ul>
+                          </div><br>
+                          <div class="container py-1 px-0">
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <button class="btn tab-button active">Lingkungan</button>
+                                    <button class="btn tab-button">Aktuator</button>
+                                    <button class="btn tab-button">Ramalan cuaca</button>
+                                    <button class="btn tab-button">Nutrisi</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>75%</p>
+                                            <p class="satuan">Kelembapan</p>
+                                        </div>
+                                        <button class="btn status-button optimum">Optimum</button>
+                                    </div>
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>31 C</p>
+                                            <p class="satuan">Suhu Udara</p>
+                                        </div>
+                                        <button class="btn status-button high">Offline</button>
+                                    </div>
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>B. Laut</p>
+                                            <p class="satuan">Mata Angin</p>
+                                        </div>
+                                        <button class="btn status-button optimum">Optimum</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 px-1">
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>12 m/s</p>
+                                            <p class="satuan">Kecepatan Angin</p>
+                                        </div>
+                                        <button class="btn status-button optimum">Optimum</button>
+                                    </div>
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>2 mm</p>
+                                            <p class="satuan">Curah Hujan Harian</p>
+                                        </div>
+                                        <button class="btn status-button optimum">Optimum</button>
+                                    </div>
+                                    <div class="condition-card">
+                                        <div class="col-md-7">
+                                            <p>3000 lux</p>
+                                            <p class="satuan">Intensitas Cahaya</p>
+                                        </div>
+                                        <button class="btn status-button optimum">Optimum</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- col 2 Kebun yang dimiliki-->
+                <div class="conditions col-md-6">
+                    <div class="condition-box">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Kondisi Kebun</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/214/2024/03/30/8-759217677.jpg" class="rounded image-card" alt="image-1">
+                                        <div class="card-body">
+                                          <p class="card-title">Greenhouse Melon</p>
+                                          <p class="card-text"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Sangat cerah</p>
+                                          <p class="card-text"><i class="bi bi-thermometer-half" style="margin-right: 3px;"></i>27 Celcius</p>
+                                          <a href="" class="btn button-kebun">Lihat Kebun</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://images.tokopedia.net/img/cache/700/product-1/2020/6/7/8389043/8389043_68f1b346-95f3-497e-b198-79437ca1c8d7_700_700.jpg" class="rounded image-card" alt="image-2">
+                                        <div class="card-body">
+                                          <p class="card-title">Kebun Cabai</p>
+                                          <p class="card-text"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Sangat cerah</p>
+                                          <p class="card-text"><i class="bi bi-thermometer-half" style="margin-right: 3px;"></i>27 Celcius</p>
+                                          <a href="#" class="btn button-kebun">Lihat Kebun</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://umsu.ac.id/health/wp-content/uploads/2023/12/10-Manfaat-Paprika-Untuk-Kesehatan-Tubuh-jika-di-Konsumsi.jpg" class="rounded image-card" alt="image-3">
+                                        <div class="card-body">
+                                          <p class="card-title">Kebun Paprika</p>
+                                          <p class="card-text"><i class="bi bi-brightness-low-fill" style="color: #FFCE31; margin-right: 3px;"></i>Sangat cerah</p>
+                                          <p class="card-text"><i class="bi bi-thermometer-half" style="margin-right: 3px;"></i>27 Celcius</p>
+                                          <a href="#" class="btn button-kebun">Lihat Kebun</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a href="../daftarkebun/daftarkebun.html" class="btn button-all-kebun ">Lihat Semua</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- laporan aktivitas -->
+             
+            <div class="activity-report row">
+                <div class="col-6">
+                    <h3 class="title-report">Laporan Aktivitas</h3>
+                </div>
+                <div class="col-6">
+                   
+                    <div class="dropdown">
+                        <button class="button-dropdown3 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Semua Aktivitas
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-white">
+                          <li><a class="dropdown-item active" href="#">Penyiraman</a></li>
+                          <li><a class="dropdown-item" href="#">Pemupukan</a></li>
+                          <li><a class="dropdown-item" href="#">Penanaman</a></li>
+                          
+                        </ul>
+                        <button class="btn button-all-detail" type="button">
+                            Lihat Detail
+                          </button>
+                      </div>
+                     
+                      
+                       
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Aktivitas</th>
+                            <th>Total</th>
+                            <th>Petugas</th>
+                            <th>Jam</th>
+                            <th>Dilaksanakan</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Penyiraman di kebun Melon</td>
+                            <td>15 Liter</td>
+                            <td>
+                                <span class="profile-icon">NH</span> Nugroho Hari Wibowo
+                            </td>
+                            <td>08.00 WIB</td>
+                            <td><span class="status-badge success">Berhasil</span></td>
+                            <td><a href="#">1 foto terlampir</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Penyiraman di kebun Cabai</td>
+                            <td>15 Liter</td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/3abc/2f4c/228c2ff93e52518fd56ab9837d53ffc8?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CVOJDUGOpVHfG34WJE2VRQ4wGPU~SA-nPajvB1tV8IYuMjFGW4rgmBQRWNZVhrkCPchn-GR9CxWDzWSWxOia3fzUufX2zqaNI7LW8WKq3Pt6of2rTL0UUnregEaLcSDWYtu~isGvOTYtn-k4zvhYN3K42JBmgVBopzZTbTK~T3~X9z3V6tjPLArgnRnlyqUVTemV8Zj6RjMwNDf2SqZxHtsWgn0OFH8FbR2p3SVVi~xqkpgzBBTj2bDcSLDansTvu1~7xaz9amCrLzAO6MaTmx8RKk-Tv7LNsthP1ZRbQhld9ErEAJvNtbHN3--99qvht96HbSor7FI6-Gv9vyyL~w__" class="profile-pic"> Kenny Cornelies Mandey
+                            </td>
+                            <td>08.00 WIB</td>
+                            <td><span class="status-badge pending">Ditunda</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Penyiraman di kebun Paprika</td>
+                            <td>15 Liter</td>
+                            <td>
+                                <span class="profile-icon">KC</span>
+                                <span class="profile-icon">SA</span>
+                                <span class="profile-icon">NH</span>
+                                <span class="profile-icon">DS</span>
+                                <a href="#" class="more-link">4+ Lihat semua</a>
+                            </td>
+                            <td>13.30 WIB</td>
+                            <td><span class="status-badge failed">Gagal</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pemanenan di kebun Paprika</td>
+                            <td>1 Ton</td>
+                            <td>
+                                <img src="https://s3-alpha-sig.figma.com/img/3abc/2f4c/228c2ff93e52518fd56ab9837d53ffc8?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CVOJDUGOpVHfG34WJE2VRQ4wGPU~SA-nPajvB1tV8IYuMjFGW4rgmBQRWNZVhrkCPchn-GR9CxWDzWSWxOia3fzUufX2zqaNI7LW8WKq3Pt6of2rTL0UUnregEaLcSDWYtu~isGvOTYtn-k4zvhYN3K42JBmgVBopzZTbTK~T3~X9z3V6tjPLArgnRnlyqUVTemV8Zj6RjMwNDf2SqZxHtsWgn0OFH8FbR2p3SVVi~xqkpgzBBTj2bDcSLDansTvu1~7xaz9amCrLzAO6MaTmx8RKk-Tv7LNsthP1ZRbQhld9ErEAJvNtbHN3--99qvht96HbSor7FI6-Gv9vyyL~w__" class="profile-pic"> Kenny Cornelies Mandey
+                            </td>
+                            <td>11.20 WIB</td>
+                            <td><span class="status-badge failed">Gagal</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pemupukan di Kebun Melon</td>
+                            <td>15 Kilo</td>
+                            <td>
+                                <span class="profile-icon">KC</span>
+                                <span class="profile-icon">SA</span>
+                                <span class="profile-icon">NH</span>
+                                <a href="#" class="more-link">4+ Lihat semua</a>
+                            </td>
+                            <td>08.30 WIB</td>
+                            <td><span class="status-badge success">Berhasil</span></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

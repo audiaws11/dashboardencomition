@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomotion Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="statistikkebun.css">
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo1"><img src="/image/389a5964b4945c2298602ae4b4f46142.png" style="color: #f37523; font-size: 10px; width: 200px; height: 22px;"/></div>
+        <ul>
+            <li><a href="../halamanutama/halamanutama.html"><button class="button-dashboard"><i class="bi bi-house-door-fill" style="margin-right: 10px;"></i>Halaman Utama</button></a></li>
+            <li><a href="../daftarkebun/daftarkebun.html"><button class="button-dashboard"><i class="bi bi-tree" style="margin-right: 10px;"></i>Daftar Kebun</button></a></li>
+            <li><a href="../statistikkebun/statistikkebun.html"><button class="button-dashboard"><i class="bi bi-graph-up" style="margin-right: 10px;"></i>Statistik Kebun</button></a></li>
+            <li><button class="button-dashboard"><i class="bi bi-box-fill"style="margin-right: 10px;"></i>Stok Kebun</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-calendar3"style="margin-right: 10px;"></i>Penjadwalan</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-flower3" style="margin-right: 10px;"></i>Informasi Budidaya</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-people-fill"style="margin-right: 10px;"></i>Kelompok Tani</button></li>
+            <li><button class="button-dashboard"><i class="bi bi-person-fill-gear"style="margin-right: 10px;"></i>Pengaturan Akun</button></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-header">
+            
+            <div class="header-welcome">
+                <h1>Statistik Kebun</h1>
+                <p>Kebun Lembang</p>
+            </div>
+            <div class="header-date row">
+                <p class="col-11 date">12 Januari 2024</p><br>
+                <div class="notification-icon col-1">
+                    <i class="notifcation bi-bell-fill" style="color: #9DB74C; font-size: 20px; text-align: left;margin-right: 30px; padding-right: 20px;"></i><span class="notification-badge"></span>
+                </div>
+                <p class="col-11">10:30:32 WIB, Jawa Barat</p>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="section">
+               <!-- dropdown -->
+               <div class="dropdown">
+                <button class="button-dropdown btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Greenhouse Melon
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                  <li><a class="dropdown-item active" href="#">Greehouse Melon</a></li>
+                  <li><a class="dropdown-item" href="#">Kebun Cabai</a></li>
+                  <li><a class="dropdown-item" href="#">Kebun Paprika</a></li>
+                </ul>
+              </div>
+                <!-- button -->
+                <button class="button-class">Lingkungan</button>
+                <button class="button-class" disabled>Nutrisi</button>
+            </div>
+                
+            </div>
+
+            
+                <!-- statistik kebun -->
+                <div class="row">
+                    <div class="card-box">
+                        <div class="card-detail">
+                            <div class="row">
+                              <div class="col-md- condition-card">
+                                <button class="button-statistik">Lingkungan</button>
+                                <button class="button-statistik" disabled>Suhu</button>
+                                <button class="button-statistik" disabled>Kelembapan</button>
+                                <button class="button-statistik" disabled>Intensitas Hujan</button>
+                                <button class="button-statistik" disabled>Kecepatan Angin</button>
+                                <canvas class="statistik-box" id="myChart"></canvas>
+                              </div>
+                              <div class="col-md-4 condition-card1">
+                                <h3 class="condition-title">Ringkasan</h3>
+                                <div class="container mt-4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            <table class="summary-table">
+                                                <tr>
+                                                    <th>Maksimum</th>
+                                                    <td>48000 LUX</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Minimum</th>
+                                                    <td>0 LUX</td>
+                                                </tr>
+                                            </table>
+                                            <button class="download-btn">
+                                               Unduh data
+                                               <i class="bi bi-download"></i> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              
+                                    
+                                              
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                
+                                
+        
+                        
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                <script>
+                    const ctx = document.getElementById('myChart').getContext('2d');
+                    const myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['02.24', '03.36', '04.48', '06.00', '07.12', '08.24', '09.36', '10.48', '12.00', '13.12'],
+                            datasets: [{
+                                label: 'LUX',
+                                data: [0, 10000, 15000, 20000, 25000, 30000, 45000, 35000, 40000, 50000],
+                                fill: false,
+                                borderColor: 'black',
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                x: {
+                                    title: {
+                                        display: true,
+                                        text: 'WIB'
+                                    }
+                                },
+                                y: {
+                                    title: {
+                                        display: true,
+                                        text: 'LUX'
+                                    },
+                                    beginAtZero: true
+                                }
+                            },
+                            plugins: {
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(context) {
+                                            return `${context.parsed.y} LUX`;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                </script>                
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

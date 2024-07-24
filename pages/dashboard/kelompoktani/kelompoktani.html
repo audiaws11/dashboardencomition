@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="penjadwalan.css">
+    <link rel="stylesheet" href="kelompoktani.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
@@ -41,8 +41,7 @@
         <div class="top-header">
             
             <div class="header-welcome">
-                <h1>Penjadwalan</h1>
-                <p>Kebun Lembang</p>
+                <h1>Kelompok Tani</h1>
             </div>
             <div class="header-date row">
                 <p class="col-11 date">12 Januari 2024</p><br>
@@ -56,124 +55,68 @@
         <div class="content">
             <div class="section">
                <!-- add-->
-               <button class="button-add">Tambah Jadwal <i class="bi bi-plus-circle-fill" style="margin-left:10px;"></i></button>
+               <button class="button-add">Tambah Anggota <i class="bi bi-plus-circle-fill" style="margin-left:10px;"></i></button>
             </div>
             </div>
             
                 <!-- penjadwalan -->
                 <div class="activity-report row">
                     <div class="col-6">
-                        <h3 class="title-report">Penjadwalan</h3>
+                        <h3 class="title-report">Profil Anggota</h3>
                     </div>
-                    <div class="col-6">
-                        <div class="dropdown">
-                            <input type="text" id="datepicker" class="form-control button-dropdown3" placeholder="Pilih Tanggal">
-                        </div>
-                        
-                        <div class="dropdown">
-                            <button class="button-dropdown4 btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Semua Aktivitas
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-white">
-                              <li><a class="dropdown-item active" href="#">Penyiraman</a></li>
-                              <li><a class="dropdown-item" href="#">Pemupukan</a></li>
-                              <li><a class="dropdown-item" href="#">Penanaman</a></li>
-                            </ul>
-                        </div>
+                    
 
-                        <div class="dropdown">
-                            <button class="btn button-all-detail">
-                                Download
-                                <i class="bi bi-download"></i> 
-                            </button>
-                        </div>
-                    </div>
+                    
                     
                     
                     <table>
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Penyiraman</th>
-                                <th>Total</th>
-                                <th>Petugas</th>
-                                <th>Jam</th>
-                                <th>Dilaksanakan</th>
-                                <th>Keterangan</th>
+                                <th>Nama Anggota</th>
+                                <th>Jabatan</th>
+                                <th>Nomor</th>
+                                <th>Email</th>
+                                <th>Tempat Bertugas</th>
+                                <th>Ket</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Penyiraman di kebun Melon</td>
-                                <td>15 Liter</td>
-                                <td>
-                                    <span class="profile-icon">NH</span> Nugroho Hari Wibowo
-                                </td>
-                                <td>08.00 WIB</td>
-                                <td><span class="status-badge success">Berhasil</span></td>
-                                <td><a href="#">1 foto terlampir</a></td>
+                                <td> <span class="profile-icon">NH</span> Nugroho Hari Wibowo</td>
+                                <td>Petani</td>
+                                <td>085683789323</td>
+                                <td>nugroho@gmail.com</td>
+                                <td>Greenhouse Melon</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Penyiraman di kebun Cabai</td>
-                                <td>15 Liter</td>
-                                <td>
-                                    <img src="https://shanibacreative.com/wp-content/uploads/2020/06/membuat-foto-profil-yang-bagus-834x556.jpg" class="profile-pic"> Kenny Cornelies Mandey
-                                </td>
-                                <td>08.00 WIB</td>
-                                <td><span class="status-badge pending">Ditunda</span></td>
-                                <td>Penyiraman manual</td>
+                                <td> <img src="https://shanibacreative.com/wp-content/uploads/2020/06/membuat-foto-profil-yang-bagus-834x556.jpg" class="profile-pic"> Kenny Cornelies Mandey</td>
+                                <td>Petani</td>
+                                <td>085683789323</td>
+                                <td>kenny@gmail.com</td>
+                                <td>Kebun Cabai</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Penyiraman di kebun Paprika</td>
-                                <td>15 Liter</td>
-                                <td>
-                                    <span class="profile-icon">KC</span>
-                                    <span class="profile-icon">SA</span>
-                                    <span class="profile-icon">NH</span>
-                                    <span class="profile-icon">DS</span>
-                                    <a href="#" class="more-link">4+ Lihat semua</a>
-                                </td>
-                                <td>13.30 WIB</td>
-                                <td><span class="status-badge failed">Gagal</span></td>
-                                <td>Penyiraman manual</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Pemanenan di kebun Paprika</td>
-                                <td>1 Ton</td>
-                                <td>
-                                    <img src="https://shanibacreative.com/wp-content/uploads/2020/06/membuat-foto-profil-yang-bagus-834x556.jpg" class="profile-pic"> Kenny Cornelies Mandey
-                                </td>
-                                <td>11.20 WIB</td>
-                                <td><span class="status-badge failed">Gagal</span></td>
-                                <td>Penyiraman manual</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Pemupukan di Kebun Melon</td>
-                                <td>15 Kilo</td>
-                                <td>
-                                    <span class="profile-icon">KC</span>
-                                    <span class="profile-icon">SA</span>
-                                    <span class="profile-icon">NH</span>
-                                    <a href="#" class="more-link">4+ Lihat semua</a>
-                                </td>
-                                <td>08.30 WIB</td>
-                                <td><span class="status-badge success">Berhasil</span></td>
-                                <td>Penyiraman manual</td>
+                                <td> <img src="https://shanibacreative.com/wp-content/uploads/2020/06/membuat-foto-profil-yang-bagus-834x556.jpg" class="profile-pic"> Kenny Cornelies Mandey</td>
+                                <td>Petani</td>
+                                <td>085683789323</td>
+                                <td>kenny@gmail.com</td>
+                                <td>Kebun Paprika</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td> <span class="profile-icon">AW</span> Audia Winniar</td>
+                                <td>Petani</td>
+                                <td>085683789323</td>
+                                <td>audia@gmail.com</td>
+                                <td>Kebun Tomat</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <td>5</td>
